@@ -1,10 +1,11 @@
-# instantiated from policy/templates/required-check.md — I4: no path/branch filters
+# instantiated from policy/templates/required-check.md (I4: no path or branch filters)
 name: static
-on:
-  push:
-  pull_request:
+
+on: [push, pull_request]
+
 permissions:
   contents: read
+
 jobs:
   static:
     runs-on: ubuntu-latest
