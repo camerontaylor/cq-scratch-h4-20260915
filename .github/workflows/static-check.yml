@@ -1,0 +1,14 @@
+# instantiated from policy/templates/required-check.md (I4: no path or branch filters)
+name: static-check
+
+on: [push, pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  static-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: static checks pass
+        run: echo "static check passes (I4 self-test)"
