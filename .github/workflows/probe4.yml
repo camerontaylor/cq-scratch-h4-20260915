@@ -1,8 +1,0 @@
-# a comment here
-name: probe4
-on: [push]
-jobs:
-  a:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo hi

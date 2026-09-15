@@ -1,7 +1,0 @@
-name: probe5
-on: [push]
-jobs:
-  static:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo hi
