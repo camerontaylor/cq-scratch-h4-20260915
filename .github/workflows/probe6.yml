@@ -1,0 +1,12 @@
+name: probe6
+on: [push]
+
+permissions:
+  contents: read
+
+jobs:
+  static:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo hi
