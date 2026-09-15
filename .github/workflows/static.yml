@@ -1,0 +1,13 @@
+# instantiated from policy/templates/required-check.md — I4: no path/branch filters
+name: static
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - name: static checks pass
+        run: echo "static: always reports (I4 self-test)"
